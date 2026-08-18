@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAM Consulting | Professional Accounting & Tax Solutions in Karachi, Pakistan</title>
+<meta name="description" content="TAM Consulting offers affordable accounting, bookkeeping, taxation, internal audit, and business consulting services for SMEs and startups in Karachi, Pakistan. 15+ years of experience.">
+<meta property="og:title" content="TAM Consulting | Accounting & Tax Solutions for Growing Businesses">
+<meta property="og:description" content="Affordable accounting, bookkeeping, tax consultancy and financial advisory for SMEs. Serving Karachi and remote clients since 2010.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0A2540;
+    --royal: #1D4ED8;
+    --royal-light: #2563EB;
+    --emerald: #16A34A;
+    --emerald-light: #22C55E;
+    --white: #FFFFFF;
+    --gray-light: #F5F7FA;
+    --gray-mid: #E8ECF0;
+    --gray-border: #D1D9E6;
+    --text-dark: #111827;
+    --text-mid: #374151;
+    --text-muted: #6B7280;
+    --font-head: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background: var(--white);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* ─── NAV ─────────────────────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(10, 37, 64, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 4px 32px rgba(10,37,64,0.4); }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, #1D4ED8, #16A34A);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+  .logo-text { font-family: var(--font-head); font-weight: 700; font-size: 18px; color: #fff; line-height: 1.1; }
+  .logo-sub { font-size: 10px; font-weight: 400; color: rgba(255,255,255,0.5); letter-spacing: 0.5px; }
+  .nav-links { display: flex; align-items: center; gap: 8px; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+  .nav-cta {
+    background: var(--emerald) !important;
+    color: #fff !important;
+    padding: 8px 20px !important;
+  }
+  .nav-cta:hover { background: var(--emerald-light) !important; }
+
+  /* ─── HERO ────────────────────────────────────────────── */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 68px;
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(29,78,216,0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(29,78,216,0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-glow {
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(29,78,216,0.25) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .hero-glow2 {
+    position: absolute;
+    bottom: -100px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(22,163,74,0.15) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(29,78,216,0.15);
+    border: 1px solid rgba(29,78,216,0.3);
+    color: #93C5FD;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .hero-badge span { width: 6px; height: 6px; background: var(--emerald-light); border-radius: 50%; display: inline-block; }
+  .hero h1 {
+    font-family: var(--font-head);
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .hero h1 .accent { color: var(--emerald-light); }
+  .hero p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--emerald);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-primary:hover { background: var(--emerald-light); transform: translateY(-1px); }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.05); }
+  .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .hero-stat {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+  }
+  .hero-stat-num {
+    font-family: var(--font-head);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--emerald-light);
+    display: block;
+  }
+  .hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.5); font-weight: 500; }
+
+  /* Hero right panel — dashboard visual */
+  .hero-dashboard {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 28px;
+    backdrop-filter: blur(20px);
+  }
+  .dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .dash-title { font-family: var(--font-head); font-size: 14px; font-weight: 600; color: #fff; }
+  .dash-badge { background: rgba(22,163,74,0.2); color: #86EFAC; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 100px; }
+  .dash-metric {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dash-metric-val { font-family: var(--font-head); font-size: 26px; font-weight: 700; color: #fff; }
+  .dash-metric-label { font-size: 12px; color: rgba(255,255,255,0.45); }
+  .dash-metric-change { background: rgba(22,163,74,0.15); color: #86EFAC; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 100px; }
+  .dash-bars { display: flex; gap: 6px; align-items: flex-end; height: 70px; margin-bottom: 16px; }
+  .dash-bar { flex: 1; border-radius: 4px 4px 0 0; }
+  .dash-services { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dash-service-chip {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .dash-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+  /* ─── SECTION SHARED ──────────────────────────────────── */
+  section { position: relative; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section-pad { padding: 96px 0; }
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--royal);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--emerald); display: block; }
+  .section-title {
+    font-family: var(--font-head);
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+  .section-sub {
+    font-size: 17px;
+    color: var(--text-muted);
+    max-width: 560px;
+    line-height: 1.7;
+    margin-top: 14px;
+  }
+
+  /* diagonal divider */
+  .diagonal-cut {
+    height: 80px;
+    background: var(--navy);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  }
+  .diagonal-cut-reverse {
+    height: 80px;
+    background: var(--gray-light);
+    clip-path: polygon(0 0, 100% 100%, 100% 100%, 0 100%);
+  }
+
+  /* ─── ABOUT ───────────────────────────────────────────── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-card-main {
+    background: var(--navy);
+    border-radius: 20px;
+    padding: 36px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-card-main::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 180px; height: 180px;
+    background: radial-gradient(circle, rgba(29,78,216,0.4) 0%, transparent 70%);
+  }
+  .about-card-accent {
+    position: absolute;
+    bottom: -20px; right: -20px;
+    background: var(--emerald);
+    border-radius: 16px;
+    padding: 20px 24px;
+    color: #fff;
+    font-family: var(--font-head);
+    box-shadow: 0 8px 32px rgba(22,163,74,0.35);
+  }
+  .about-card-accent-num { font-size: 28px; font-weight: 800; }
+  .about-card-accent-label { font-size: 11px; opacity: 0.8; }
+  .timeline { list-style: none; padding: 0; margin-top: 32px; }
+  .timeline li {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+    position: relative;
+  }
+  .timeline li::before {
+    content: '';
+    position: absolute;
+    left: 19px; top: 28px;
+    width: 2px; height: 100%;
+    background: var(--gray-border);
+  }
+  .timeline li:last-child::before { display: none; }
+  .tl-dot {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: var(--gray-light);
+    border: 2px solid var(--gray-border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-head);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--royal);
+  }
+  .tl-content {}
+  .tl-year { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+  .tl-text { font-size: 14px; font-weight: 500; color: var(--text-dark); margin-top: 2px; }
+
+  /* ─── WHY US ──────────────────────────────────────────── */
+  .why-bg { background: var(--gray-light); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .why-card {
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: all 0.25s;
+  }
+  .why-card:hover {
+    border-color: var(--royal);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(29,78,216,0.12);
+  }
+  .why-icon {
+    width: 48px; height: 48px;
+    background: rgba(29,78,216,0.08);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+  .why-card h3 { font-family: var(--font-head); font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .why-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+  /* ─── SERVICES ────────────────────────────────────────── */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: 20px;
+    padding: 32px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--royal), var(--emerald));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(10,37,64,0.12); }
+  .service-card:hover::before { opacity: 1; }
+  .service-icon {
+    width: 56px; height: 56px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .service-card h3 { font-family: var(--font-head); font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .service-card p { font-size: 14px; color: var(--text-muted); line-height: 1.65; margin-bottom: 20px; }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+  .tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: var(--gray-light);
+    color: var(--text-mid);
+  }
+  .service-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--royal);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 4px;
+    transition: gap 0.2s;
+  }
+  .service-link:hover { gap: 8px; }
+
+  /* ─── INDUSTRIES ──────────────────────────────────────── */
+  .industries-bg { background: var(--navy); }
+  .industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+    margin-top: 48px;
+  }
+  .industry-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px 16px;
+    text-align: center;
+    transition: all 0.25s;
+    cursor: default;
+  }
+  .industry-card:hover {
+    background: rgba(29,78,216,0.2);
+    border-color: rgba(29,78,216,0.4);
+    transform: translateY(-3px);
+  }
+  .industry-icon { font-size: 28px; margin-bottom: 10px; }
+  .industry-card p { font-size: 13px; color: rgba(255,255,255,0.7); font-weight: 500; }
+
+  /* ─── PROCESS ─────────────────────────────────────────── */
+  .process-bg { background: var(--gray-light); }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    margin-top: 56px;
+    position: relative;
+  }
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 10%; right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--royal), var(--emerald));
+    z-index: 0;
+  }
+  .process-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+  .process-num {
+    width: 56px; height: 56px;
+    background: var(--white);
+    border: 3px solid var(--royal);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--royal);
+    margin: 0 auto 16px;
+  }
+  .process-step:last-child .process-num { border-color: var(--emerald); color: var(--emerald); }
+  .process-step h4 { font-family: var(--font-head); font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .process-step p { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+  /* ─── STATS ───────────────────────────────────────────── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .stat-card {
+    text-align: center;
+    padding: 40px 24px;
+    border-radius: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 40px; height: 3px;
+    background: linear-gradient(90deg, var(--royal), var(--emerald));
+    border-radius: 2px 2px 0 0;
+  }
+  .stat-num {
+    font-family: var(--font-head);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-num span { color: var(--emerald); }
+  .stat-label { font-size: 14px; color: var(--text-muted); font-weight: 500; }
+
+  /* ─── TESTIMONIALS ────────────────────────────────────── */
+  .testimonials-bg { background: var(--navy); }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .testi-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 32px 28px;
+    position: relative;
+  }
+  .testi-stars { color: #FCD34D; font-size: 16px; margin-bottom: 16px; letter-spacing: 2px; }
+  .testi-quote { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--royal), var(--emerald));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-head);
+    font-weight: 700; font-size: 14px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .testi-name { font-weight: 600; font-size: 14px; color: #fff; }
+  .testi-role { font-size: 12px; color: rgba(255,255,255,0.45); }
+
+  /* ─── FAQ ─────────────────────────────────────────────── */
+  .faq-bg { background: var(--gray-light); }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .faq-item:hover { border-color: var(--royal); }
+  .faq-q {
+    font-family: var(--font-head);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .faq-q::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--royal); flex-shrink: 0; }
+  .faq-item.open .faq-q::after { content: '–'; }
+  .faq-a {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: 12px;
+    display: none;
+  }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ─── CONTACT ─────────────────────────────────────────── */
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .contact-info h2 { font-family: var(--font-head); font-size: 36px; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+  .contact-info p { font-size: 16px; color: var(--text-muted); line-height: 1.7; margin-bottom: 32px; }
+  .contact-details { display: flex; flex-direction: column; gap: 20px; }
+  .contact-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .contact-icon {
+    width: 44px; height: 44px; flex-shrink: 0;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .contact-item h4 { font-family: var(--font-head); font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .contact-item p { font-size: 13px; color: var(--text-muted); }
+  .contact-form-wrap {
+    background: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: 24px;
+    padding: 40px 36px;
+    box-shadow: 0 8px 48px rgba(10,37,64,0.08);
+  }
+  .form-title { font-family: var(--font-head); font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .form-group label { font-size: 13px; font-weight: 600; color: var(--text-mid); }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    border: 1.5px solid var(--gray-border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-dark);
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus { border-color: var(--royal); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%;
+    background: var(--navy);
+    color: #fff;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .form-submit:hover { background: var(--royal); transform: translateY(-1px); }
+  .cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid var(--gray-border);
+    color: var(--text-mid);
+    transition: all 0.2s;
+  }
+  .cta-btn:hover { border-color: var(--royal); color: var(--royal); }
+  .cta-btn.whatsapp:hover { border-color: #25D366; color: #25D366; }
+
+  /* ─── FOOTER ──────────────────────────────────────────── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.6);
+    padding: 56px 0 28px;
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+  .footer-brand .logo { margin-bottom: 14px; }
+  .footer-brand p { font-size: 13px; line-height: 1.7; max-width: 260px; }
+  .footer-col h4 { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.9); margin-bottom: 16px; letter-spacing: 0.5px; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+  .footer-col ul li a:hover { color: #fff; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  .footer-bottom a { color: var(--emerald-light); text-decoration: none; }
+
+  /* ─── FLOATING ELEMENTS ───────────────────────────────── */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    width: 56px; height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+    z-index: 999;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s;
+  }
+  .whatsapp-float:hover { transform: scale(1.1); }
+
+  /* ─── REVEAL ANIMATIONS ───────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ─── RESPONSIVE ──────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+    .hero-dashboard { display: none; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-visual { display: none; }
+    .contact-inner { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+    .process-steps::before { display: none; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .testi-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  }
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .industries-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">TAM</div>
+      <div class="logo-text">
+        TAM Consulting
+        <div class="logo-sub">ACCOUNTING & ADVISORY</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge"><span></span> Trusted Since 2010 &nbsp;·&nbsp; Karachi, Pakistan</div>
+      <h1>Professional Accounting &amp; <span class="accent">Tax Solutions</span> for Growing Businesses</h1>
+      <p>Helping SMEs streamline bookkeeping, taxation, financial reporting, and business growth through affordable, expert accounting services.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Get Free Consultation →</a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">15+</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">100+</span>
+          <span class="hero-stat-label">Happy Clients</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">500+</span>
+          <span class="hero-stat-label">Financial Reports</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">98%</span>
+          <span class="hero-stat-label">Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard visual -->
+    <div class="hero-dashboard">
+      <div class="dash-header">
+        <span class="dash-title">Financial Dashboard</span>
+        <span class="dash-badge">● Live Reporting</span>
+      </div>
+      <div class="dash-metric">
+        <div>
+          <div class="dash-metric-label">Monthly Revenue</div>
+          <div class="dash-metric-val">PKR 2.4M</div>
+        </div>
+        <div class="dash-metric-change">▲ 18.5%</div>
+      </div>
+      <div class="dash-bars">
+        <div class="dash-bar" style="height:38%;background:rgba(29,78,216,0.35)"></div>
+        <div class="dash-bar" style="height:55%;background:rgba(29,78,216,0.45)"></div>
+        <div class="dash-bar" style="height:42%;background:rgba(29,78,216,0.35)"></div>
+        <div class="dash-bar" style="height:70%;background:rgba(29,78,216,0.55)"></div>
+        <div class="dash-bar" style="height:60%;background:rgba(29,78,216,0.45)"></div>
+        <div class="dash-bar" style="height:85%;background:rgba(29,78,216,0.65)"></div>
+        <div class="dash-bar" style="height:100%;background:rgba(22,163,74,0.75)"></div>
+      </div>
+      <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-bottom:16px;text-align:right">Jul 2025</div>
+      <div class="dash-services">
+        <div class="dash-service-chip"><div class="dash-dot" style="background:#60A5FA"></div>Tax Filing</div>
+        <div class="dash-service-chip"><div class="dash-dot" style="background:#34D399"></div>Bookkeeping</div>
+        <div class="dash-service-chip"><div class="dash-dot" style="background:#A78BFA"></div>Payroll</div>
+        <div class="dash-service-chip"><div class="dash-dot" style="background:#FBBF24"></div>Audit</div>
+        <div class="dash-service-chip"><div class="dash-dot" style="background:#F87171"></div>Advisory</div>
+        <div class="dash-service-chip"><div class="dash-dot" style="background:#38BDF8"></div>Reporting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section-pad" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-title">Trusted Financial Expertise Since 2010</h2>
+        <p class="section-sub">TAM Consulting is a Karachi-based professional accounting and business advisory firm dedicated to helping SMEs, startups, and growing businesses manage their finances with clarity and confidence.</p>
+
+        <div style="margin-top: 28px; padding: 20px 24px; background: var(--gray-light); border-radius: 14px; border-left: 4px solid var(--royal);">
+          <p style="font-size: 15px; color: var(--text-mid); font-style: italic; line-height: 1.7;">"Our mission is to provide affordable, accurate, and transparent financial services so business owners can focus on growing what they've built."</p>
+          <p style="font-size: 13px; font-weight: 600; color: var(--navy); margin-top: 10px;">— Toufeeq Ahmed, Founder &amp; Operations Manager</p>
+        </div>
+
+        <ul class="timeline" style="margin-top: 36px;">
+          <li>
+            <div class="tl-dot">2010</div>
+            <div class="tl-content">
+              <div class="tl-year">Established</div>
+              <div class="tl-text">TAM Consulting founded in Karachi with a focus on SME accounting</div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-dot">2015</div>
+            <div class="tl-content">
+              <div class="tl-year">Expansion</div>
+              <div class="tl-text">Added tax consultancy and internal audit services to the portfolio</div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-dot">2019</div>
+            <div class="tl-content">
+              <div class="tl-year">Technology</div>
+              <div class="tl-text">Introduced cloud accounting via QuickBooks and Zoho Books integration</div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-dot">2024</div>
+            <div class="tl-content">
+              <div class="tl-year">Remote Services</div>
+              <div class="tl-text">Launched remote accounting services for international clients</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-card-main">
+          <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:6px;font-weight:600;letter-spacing:0.5px">OUR COMMITMENT</div>
+          <h3 style="font-family:var(--font-head);font-size:24px;font-weight:800;color:#fff;margin-bottom:20px;line-height:1.2">Client-First. Accurate. Affordable.</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px">
+            <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:16px">
+              <div style="font-size:28px;font-weight:800;font-family:var(--font-head);color:#60A5FA">100+</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.5)">Businesses Served</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:16px">
+              <div style="font-size:28px;font-weight:800;font-family:var(--font-head);color:#34D399">15+</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.5)">Years in Practice</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06);border-radius:12px;padding:16px;margin-bottom:16px">
+            <div style="font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:8px;font-weight:600">CORE VALUES</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <span style="background:rgba(29,78,216,0.3);color:#93C5FD;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px">Integrity</span>
+              <span style="background:rgba(22,163,74,0.3);color:#86EFAC;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px">Accuracy</span>
+              <span style="background:rgba(139,92,246,0.3);color:#C4B5FD;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px">Innovation</span>
+              <span style="background:rgba(245,158,11,0.3);color:#FCD34D;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px">Confidentiality</span>
+              <span style="background:rgba(239,68,68,0.3);color:#FCA5A5;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px">Dedication</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(22,163,74,0.15);border-radius:10px;border:1px solid rgba(22,163,74,0.25)">
+            <span style="font-size:20px">✓</span>
+            <span style="font-size:13px;color:rgba(255,255,255,0.7)">Registered with FBR · SRB Compliant · Trusted by SMEs</span>
+          </div>
+        </div>
+
+        <div class="about-card-accent">
+          <div class="about-card-accent-num">98%</div>
+          <div class="about-card-accent-label">Client Retention Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section-pad why-bg" id="why">
+  <div class="container">
+    <div class="eyebrow">Why TAM Consulting</div>
+    <h2 class="section-title">Built for Businesses That Demand More</h2>
+    <p class="section-sub">We combine professional expertise with affordable pricing to deliver real value for small and medium enterprises across Pakistan.</p>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🏆</div>
+        <h3>Experienced Professionals</h3>
+        <p>Over 15 years of hands-on accounting and advisory experience across diverse industries.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">💰</div>
+        <h3>Affordable Pricing</h3>
+        <p>Transparent, competitive packages designed to fit SME budgets — no hidden costs.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">📊</div>
+        <h3>Accurate Reporting</h3>
+        <p>Precise financial statements and reports delivered on time, every time.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🛡️</div>
+        <h3>Tax Compliance</h3>
+        <p>Stay fully compliant with FBR, SRB income tax, and sales tax regulations.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">📱</div>
+        <h3>Dedicated Support</h3>
+        <p>Direct access to your accountant 7 days a week — responsive and reliable.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">🔒</div>
+        <h3>Data Security</h3>
+        <p>Your financial data is handled with strict confidentiality and secure protocols.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">☁️</div>
+        <h3>Cloud Accounting</h3>
+        <p>Real-time access to your books anywhere via QuickBooks and Zoho Books.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">⚡</div>
+        <h3>Quick Turnaround</h3>
+        <p>Fast, efficient delivery on all accounting tasks, reports, and filings.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">🎯</div>
+        <h3>Customised Solutions</h3>
+        <p>Tailored services that fit your unique business model and growth stage.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🤝</div>
+        <h3>Trusted by SMEs</h3>
+        <p>A proven track record with 100+ satisfied businesses across Pakistan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section-pad" id="services">
+  <div class="container">
+    <div class="eyebrow">What We Do</div>
+    <h2 class="section-title">Comprehensive Accounting &amp; Advisory Services</h2>
+    <p class="section-sub">End-to-end financial solutions to manage, grow, and protect your business — all under one roof.</p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon" style="background:rgba(29,78,216,0.1)">📒</div>
+        <h3>Bookkeeping</h3>
+        <p>Accurate, organised day-to-day financial record keeping — the foundation of every healthy business.</p>
+        <div class="service-tags">
+          <span class="tag">Daily Transactions</span>
+          <span class="tag">Bank Reconciliation</span>
+          <span class="tag">A/R &amp; A/P</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon" style="background:rgba(22,163,74,0.1)">🧾</div>
+        <h3>Tax Consultancy</h3>
+        <p>Expert income and sales tax advisory, return filing, and compliance support with FBR and SRB.</p>
+        <div class="service-tags">
+          <span class="tag">Income Tax</span>
+          <span class="tag">Sales Tax</span>
+          <span class="tag">FBR Filing</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon" style="background:rgba(139,92,246,0.1)">💻</div>
+        <h3>Accounting Software</h3>
+        <p>Professional setup, training, and ongoing support for QuickBooks, Zoho Books, and ERP systems.</p>
+        <div class="service-tags">
+          <span class="tag">QuickBooks</span>
+          <span class="tag">Zoho Books</span>
+          <span class="tag">ERP Setup</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon" style="background:rgba(245,158,11,0.1)">🔍</div>
+        <h3>Internal Audit</h3>
+        <p>Risk assessment, internal controls review, and process improvement to safeguard your business assets.</p>
+        <div class="service-tags">
+          <span class="tag">Risk Assessment</span>
+          <span class="tag">Compliance Review</span>
+          <span class="tag">Controls</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon" style="background:rgba(239,68,68,0.1)">📈</div>
+        <h3>Data Analytics &amp; MIS</h3>
+        <p>Custom business dashboards, KPI tracking, and financial analysis to power smarter decisions.</p>
+        <div class="service-tags">
+          <span class="tag">Dashboards</span>
+          <span class="tag">KPI Reports</span>
+          <span class="tag">Financial Analysis</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon" style="background:rgba(6,182,212,0.1)">🌐</div>
+        <h3>Remote Accounting</h3>
+        <p>Full virtual accounting and bookkeeping services for local and international clients — anywhere, anytime.</p>
+        <div class="service-tags">
+          <span class="tag">Virtual Accountant</span>
+          <span class="tag">Cloud Accounting</span>
+          <span class="tag">Monthly Reports</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon" style="background:rgba(16,185,129,0.1)">📐</div>
+        <h3>Costing &amp; Budgeting</h3>
+        <p>Product costing, budget planning, financial forecasting, and profitability analysis for strategic growth.</p>
+        <div class="service-tags">
+          <span class="tag">Product Costing</span>
+          <span class="tag">Budgeting</span>
+          <span class="tag">Forecasting</span>
+        </div>
+        <a href="#contact" class="service-link">Get Started →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section-pad industries-bg" id="industries">
+  <div class="container">
+    <div class="eyebrow" style="color:rgba(255,255,255,0.5)">Sectors We Serve</div>
+    <h2 class="section-title" style="color:#fff">Industry-Specific Expertise</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.55)">Tailored accounting solutions for businesses across every sector in Pakistan and beyond.</p>
+    <div class="industries-grid">
+      <div class="industry-card reveal">
+        <div class="industry-icon">🛒</div>
+        <p>Retail</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-1">
+        <div class="industry-icon">🏭</div>
+        <p>Manufacturing</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-2">
+        <div class="industry-icon">🔄</div>
+        <p>Trading</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🚢</div>
+        <p>Import &amp; Export</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-1">
+        <div class="industry-icon">🏥</div>
+        <p>Healthcare</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-2">
+        <div class="industry-icon">🎓</div>
+        <p>Education</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">💻</div>
+        <p>IT Companies</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-1">
+        <div class="industry-icon">🏗️</div>
+        <p>Construction</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-2">
+        <div class="industry-icon">🍽️</div>
+        <p>Restaurants</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🤲</div>
+        <p>NGOs</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-1">
+        <div class="industry-icon">🚀</div>
+        <p>Startups</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-2">
+        <div class="industry-icon">💼</div>
+        <p>Freelancers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-pad process-bg" id="process">
+  <div class="container">
+    <div class="eyebrow">How We Work</div>
+    <h2 class="section-title">A Clear, Simple Onboarding Process</h2>
+    <p class="section-sub">Getting your finances in order is straightforward. Here's how we get started — and keep going.</p>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="process-num">1</div>
+        <h4>Initial Contact</h4>
+        <p>Reach out via phone, WhatsApp, or email — we respond same day.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-num">2</div>
+        <h4>Free Consultation</h4>
+        <p>We discuss your business needs and current financial situation.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-num">3</div>
+        <h4>Business Analysis</h4>
+        <p>Thorough review of your records, processes, and requirements.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="process-num">4</div>
+        <h4>Accounting Setup</h4>
+        <p>We configure your systems, charts of accounts, and workflows.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">5</div>
+        <h4>Ongoing Support</h4>
+        <p>Continuous accounting, reporting, and advisory as your business grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section-pad" id="stats">
+  <div class="container">
+    <div class="eyebrow">Our Track Record</div>
+    <h2 class="section-title">Numbers That Speak for Themselves</h2>
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-num">100<span>+</span></div>
+        <div class="stat-label">Businesses Served</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-num">500<span>+</span></div>
+        <div class="stat-label">Financial Reports Delivered</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">Client Satisfaction Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-pad testimonials-bg" id="testimonials">
+  <div class="container">
+    <div class="eyebrow" style="color:rgba(255,255,255,0.5)">Client Reviews</div>
+    <h2 class="section-title" style="color:#fff">Trusted by Growing Businesses</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.55)">Real feedback from the businesses we've helped navigate their financial journey.</p>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Very professional firm — highly recommended for SMEs looking for prompt and creative accounting solutions. TAM Consulting has transformed how we manage our books."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AK</div>
+          <div>
+            <div class="testi-name">Ahmed Karimi</div>
+            <div class="testi-role">Managing Director, Karimi Trading Co.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"A professional organisation supporting our business with accounting and financial database management. Excellent expertise and attention to detail across every engagement."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SF</div>
+          <div>
+            <div class="testi-name">Sara Farooqi</div>
+            <div class="testi-role">CEO, Farooqi Enterprises</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Reliable remote accounting support with affordable packages and excellent customer service. TAM Consulting made tax season stress-free for our startup."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RM</div>
+          <div>
+            <div class="testi-name">Raza Mahmood</div>
+            <div class="testi-role">Founder, Techbridge Innovations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="#contact" class="btn-primary" style="display:inline-flex">Join 100+ Happy Clients →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad faq-bg" id="faq">
+  <div class="container">
+    <div class="eyebrow">Questions &amp; Answers</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-sub">Everything you need to know about TAM Consulting's services and how we work.</p>
+    <div class="faq-grid">
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">What accounting software do you support?</div>
+        <div class="faq-a">We are certified experts in QuickBooks and Zoho Books, and also support ERP systems. We can help you choose, set up, and train your team on the best solution for your business size and industry.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
+        <div class="faq-q">Do you provide remote bookkeeping services?</div>
+        <div class="faq-a">Yes — we offer full remote bookkeeping and accounting services for clients across Pakistan and internationally. All work is done securely via cloud accounting platforms.</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Can you file sales tax and income tax returns?</div>
+        <div class="faq-a">Absolutely. We handle all FBR and SRB filings — including income tax, sales tax, and withholding tax returns. We ensure full compliance with the latest regulations.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
+        <div class="faq-q">Do you offer monthly accounting packages?</div>
+        <div class="faq-a">Yes. We offer flexible monthly retainer packages for bookkeeping, reporting, and tax compliance — tailored to the size and needs of your business. Contact us for a custom quote.</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Can startups and new businesses use your services?</div>
+        <div class="faq-a">We love working with startups. We can help with business registration, NTN/STRN registration, initial accounting setup, payroll, and all foundational financial structures from day one.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
+        <div class="faq-q">Is my financial data kept confidential?</div>
+        <div class="faq-a">Client confidentiality is our top priority. All financial data is handled under strict non-disclosure agreements, with secure digital protocols and access controls.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-pad" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Book a Free Consultation Today</h2>
+        <p>Ready to get your finances in order? Reach out and we'll get back to you within the same business day.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon" style="background:rgba(29,78,216,0.1);font-size:22px">📍</div>
+            <div>
+              <h4>Office Address</h4>
+              <p>Karachi, Sindh, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" style="background:rgba(22,163,74,0.1);font-size:22px">📞</div>
+            <div>
+              <h4>Phone Numbers</h4>
+              <p>+92 322 2270164 &nbsp;|&nbsp; +92 345 2745496</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" style="background:rgba(245,158,11,0.1);font-size:22px">🕐</div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon–Sat: 7 AM – 9 PM &nbsp;|&nbsp; Sun: 7 AM – 5 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="tel:+923222270164" class="cta-btn">📞 Call Now</a>
+          <a href="https://wa.me/923222270164" class="cta-btn whatsapp" target="_blank">💬 WhatsApp</a>
+          <a href="mailto:info@tamconsulting.pk" class="cta-btn">✉️ Email Us</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <div class="form-title">Send Us a Message</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+92 3xx xxxxxxx">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option value="">Select a service…</option>
+            <option>Bookkeeping</option>
+            <option>Tax Consultancy</option>
+            <option>Accounting Software (QuickBooks / Zoho)</option>
+            <option>Internal Audit</option>
+            <option>Data Analytics &amp; MIS Reporting</option>
+            <option>Remote Accounting</option>
+            <option>Costing &amp; Budgeting</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Briefly describe your business and what you need help with…"></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit(this)">
+          <span>Send Message</span> →
+        </button>
+        <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:14px">We typically respond within a few hours on business days</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-mark">TAM</div>
+          <div class="logo-text">TAM Consulting<div class="logo-sub">ACCOUNTING &amp; ADVISORY</div></div>
+        </a>
+        <p style="margin-top:14px">Affordable, professional accounting and business advisory services for SMEs, startups, and entrepreneurs across Pakistan — since 2010.</p>
+        <div style="display:flex;gap:12px;margin-top:20px">
+          <a href="https://wa.me/923222270164" target="_blank" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;text-decoration:none">💬</a>
+          <a href="tel:+923222270164" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;text-decoration:none">📞</a>
+          <a href="mailto:info@tamconsulting.pk" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;text-decoration:none">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Bookkeeping</a></li>
+          <li><a href="#services">Tax Consultancy</a></li>
+          <li><a href="#services">Accounting Software</a></li>
+          <li><a href="#services">Internal Audit</a></li>
+          <li><a href="#services">MIS &amp; Data Analytics</a></li>
+          <li><a href="#services">Remote Accounting</a></li>
+          <li><a href="#services">Costing &amp; Budgeting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#industries">Retail &amp; Trading</a></li>
+          <li><a href="#industries">Manufacturing</a></li>
+          <li><a href="#industries">Import &amp; Export</a></li>
+          <li><a href="#industries">Startups</a></li>
+          <li><a href="#industries">IT Companies</a></li>
+          <li><a href="#industries">Healthcare</a></li>
+          <li><a href="#industries">NGOs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#process">How We Work</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TAM Consulting. All rights reserved. Karachi, Pakistan.</span>
+      <span>Accounting Services Karachi · Tax Consultant Pakistan · <a href="#contact">Bookkeeping Services SME</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/923222270164" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // FAQ toggle
+  function toggleFaq(el) {
+    const wasOpen = el.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) el.classList.add('open');
+  }
+
+  // Form submit
+  function handleSubmit(btn) {
+    btn.innerHTML = '✓ &nbsp;Message Sent! We\'ll be in touch soon.';
+    btn.style.background = 'var(--emerald)';
+    btn.disabled = true;
+  }
+</script>
+
+</body>
+</html>
